@@ -1,0 +1,143 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root
+{
+    --black: #333;
+    --white: #fff;
+    --aash: rgb(246, 252, 251);
+}
+
+
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: rgb(247, 241, 241);
+    font-size: 0.6em;
+    
+}
+.nav-container{
+    height: 10vh;
+    background-color: rgb(9, 88, 88);
+    
+    
+
+}
+nav{
+  
+    width: 95%;
+    margin: auto;
+    height: 110%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.logo{
+    height: 11vh;
+}
+.logo img{
+    height: 100%;
+    
+}
+.nav-lings{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 40%;
+}
+.nav-lings li a:hover{
+    color: rgb(0, 2, 2);
+}
+.nav-lings li:hover{
+    transform: scale(1.2);
+    transition: transform 0.4s;
+}
+
+
+
+.main{
+   position: relative;
+   width: 100%;
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.main video
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    user-select: none;
+    mix-blend-mode: screen;
+}
+h2{
+    font-size: 4em;
+}
+.main h2{
+   position: relative;
+   z-index: 3;
+   font-size: 4em;
+   color: var(--aash);
+   text-shadow: 40 60px 60px rgba(255, 5, 5, 0.2);   
+}
+
+.copyrighttext{
+    position: relative;
+    right: 500px;
+    bottom: -270px;
+    z-index: 4;
+    font-weight: 500;
+    font-size: 1.2em;
+    color: var(--black);
+}
+.sci{
+    position: absolute;
+    right: 100px;
+    bottom: 40px;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+}
+
+.sci li a{
+    text-decoration: none;
+    color: var(--black);
+    font-size: 1.75em;
+}
+@media(max-width:768px)
+{
+    header
+    {
+        padding: 20px;
+    }
+    .copyrighttext{
+        
+        left: 20px;
+        bottom: 30px;
+    }
+    .sci{
+        
+        right: 20px;
+        bottom: 20px;
+    }
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <div class="nav-container">
+        <nav>
+            <div class="logo">
+                <img src="logo.PNG">
+            </div>
+            <ul class="nav-lings">
+                <li><a href="hotel.html">Home</a></li>
+                <li><a href="reservation.html" target="_self">Resevation</a></li>
+                <li><a href="contact.html" target="_self">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+               
+               
+
+            </ul>
+            
+        </nav>
+    </div>
+    <div class="container">
+        <h1>Lux Luxury gallery...</h1>
+        <div class="row">
+            <div class="col">
+                <div class="feature-img">
+                    <img src="banner-img.jpg" width="100%">
+                    <img src="play.png" class="play-btn" onclick="playVideo('video1.mp4')">
+                </div>
+            </div>
+            <div class="col">
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="bg.jpg">
+                        <img src="play.png" class="play-btn" onclick="playVideo('video4.mp4')">
+                    </div>
+                    <p> One noticeable difference between a luxury hotel room and
+                         an average one is the type of bath products they provide for complimentary use.
+                    </p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="pic1.jfif">
+                        <img src="play.png" class="play-btn"onclick="playVideo('video.mp4')">
+                    </div>
+                    <p>a comfortable bed, stylish, aesthetic and quality furniture, proper lighting and
+                         decorative elements matching the furniture are the sine qua non of a hotel room.
+                    </p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="pic2.jfif">
+                        <img src="play.png" class="play-btn" onclick="playVideo('video9.mp4')">
+                    </div>
+                    <p>Fast Wireless Connectivity (Wi-Fi) It is a given that every hotel should provide free and fast …
+                        Smart Rooms & Smart Technology.
+                        <p>
+                    </p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="pic3.jfif">
+                        <img src="play.png" class="play-btn" onclick="playVideo('video2.mp4')">
+                    </div>
+                    <p>Luxury Rooms offer all the facilities of a Deluxe Room, with additional luxury touches: 
+                        Bath amenities and high floor location for the most stunning views of Bahrain
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="video-player" id="videoPlayer">
+        <video width="100%" controls autoplay id="myvideo">
+            <source src="video1.mp4" type="video/mp4">
+        </video>
+        <img src="close.png" class="close-btn" onclick="stopVideo()">
+    </div>
+
+<script>
+    var videoPlayer = document.getElementById("videoPlayer");
+    var myvideo = document.getElementById("myvideo");
+
+    function stopVideo(){
+        videoPlayer.style.display = "none";
+    }
+    function playVideo(file){
+       myvideo.src = file; 
+       videoPlayer.style.display = "block";
+    }
+</script>
+
+</body>
+</html>
